@@ -4,6 +4,6 @@ import Navbar from '@/components/bars/Navbar.vue';
 
 <template>
   <main>
-    <Navbar active="home" subactive="null"/>
+    <Navbar active="news" subactive="null"/>
   </main>
 </template>

@@ -1,15 +1,12 @@
+<script setup>
+import Navbar from '@/components/bars/Navbar.vue';
+</script>
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Navbar active="about" subactive="null"/>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 </style>
