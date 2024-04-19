@@ -1,5 +1,7 @@
 import './assets/main.css'
 import './assets/navbar.css'
+import './assets/table.css'
+import './assets/button.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
