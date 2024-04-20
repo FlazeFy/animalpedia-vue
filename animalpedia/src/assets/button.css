@@ -14,6 +14,14 @@
 .btn-primary {
     background: var(--primaryColor) !important;
 }
+.btn_tag {
+    background: var(--infoBG) !important;
+    color: var(--whiteColor) !important;
+    text-decoration: none;
+    padding: var(--spaceXSM) var(--spaceSM);
+    margin-right: var(--spaceXXSM);
+    border-radius: var(--roundedSM);
+}
 .btn-info {
     background: var(--infoBG) !important;
 }

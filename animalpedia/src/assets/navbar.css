@@ -1,7 +1,10 @@
 /*Navbar desktop*/
 .navbar, .footer {
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 0;
+}
+.navbar {
+    margin-bottom: var(--spaceXLG);
 }
 .navbar ul, .footer {
     margin: 0;
