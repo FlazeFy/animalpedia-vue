@@ -33,7 +33,7 @@
                 </div>
             </li>
         <li>
-            <a :class="'nav-link mb-2 ' + getActive(active, 'manage')" data-bs-toggle="collapse" href="#collapseManage">Manage</a>
+            <a :class="'nav-link mb-2 ' + getActive(active, 'manage')" data-bs-toggle="collapse" href="manage_book">Manage</a>
             <div class="collapse" id="collapseManage">
             <a :class="'nav-link sub mb-2 ' + getActive(subactive, 'manage_book')" href="/manage_book">Manage Book</a>
             <a :class="'nav-link sub mb-2 ' + getActive(subactive, 'manage_news')" href="/manage_news">Manage News</a>

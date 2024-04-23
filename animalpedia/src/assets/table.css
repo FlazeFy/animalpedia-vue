@@ -1,4 +1,4 @@
-thead tr td {
+thead tr th {
     background: var(--infoBG) !important;
     color: var(--whiteColor) !important;
 }
