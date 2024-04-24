@@ -2,8 +2,8 @@
     <table class="table">
     <thead>
         <tr>
-            <th scope="col">Dictionary Type</th>
-            <th scope="col">Dictionary Name</th>
+            <th scope="col">Tag Name</th>
+            <th scope="col">Tag Used</th>
             <th scope="col">Manage</th>
         </tr>
     </thead>
@@ -12,8 +12,8 @@
             <p>Oops! Error encountered: {{ error.message }}</p>
         </div>
         <tr v-else-if="data" v-for="(dt, index) in data" :key="index" class="col-lg-3 col-md-4 col-sm-12 mx-auto">
-            <th scope="col">{{ dt.dictionary_type }}</th>
-            <th scope="col">{{ dt.dictionary_name}}</th>
+            <th scope="col">{{ dt.tags_name }}</th>
+            <th scope="col"><button class ="btn btn-primary">Stats</button></th>
             <th scope="col"><button class ="btn btn-manage">Edit</button></th>
         </tr>
         <div v-else>Loading...</div>
@@ -30,7 +30,7 @@
     
     onMounted(async () => {
         try {
-            const response = await axios.get('http://127.0.0.1:1323/api/v1/dct/all?page=1')
+            const response = await axios.get('http://127.0.0.1:1323/api/v1/tag/desc?page=1')
             data.value = response.data.data.data
         } catch (error) {
             console.error('Error fetching data:', error);
