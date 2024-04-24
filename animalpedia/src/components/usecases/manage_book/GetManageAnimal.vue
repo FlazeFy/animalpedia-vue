@@ -19,7 +19,7 @@
             <th scope="col" class='p-3'>
                 <img v-bind:src="dt.animals_img_url" class="img img-fluid img-profile" style="width: 75px; height: 75px; border-width: 2.5px;">
             </th>
-            <th scope="col">{{ dt.animals_name }}</th>
+            <th scope="col">{{ ucFirstChar(dt.animals_name) }}</th>
             <th scope="col">{{ dt.animals_region }}</th>
             <th scope="col">{{ dt.animals_zone }}</th>
             <th scope="col">{{ dt.animals_status }}</th>
@@ -34,7 +34,7 @@
 <script setup>
     import axios from 'axios'
     import { ref, onMounted } from 'vue'
-    import { ucFirstWord } from '../../../helpers/Converter.js'
+    import { ucFirstWord, ucFirstChar } from '../../../helpers/Converter.js'
     
     let data = ref([]);
     const error = ref(null);

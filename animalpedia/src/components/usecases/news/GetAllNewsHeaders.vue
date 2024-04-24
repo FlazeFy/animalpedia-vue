@@ -14,7 +14,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <h4>{{ ucFirstWord(dt.news_name) }}</h4>
                         <div class="mt-3 mb-4 d-inline-block w-100">
-                            <a v-for="(tag, i) in JSON.parse(dt.news_tag)" :key="i" :href="`/news/tag/${tag.slug_name}`" :title="`Open news with tag: ${tag.tag_name}`" class="button btn_tag">{{ tag.tag_name }}</a>
+                            <button v-for="(tag, i) in JSON.parse(dt.news_tag)" :key="i" :href="`/news/tag/${tag.slug_name}`" :title="`Open news with tag: ${tag.tag_name}`" class="button btn_tag">{{ tag.tag_name }}</button>
                         </div>
                         <div class="container news_content_box">
                             <p class="container news_header_desc">{{ ucFirstChar(removeHTMLTags(dt.news_body)) }}</p>
